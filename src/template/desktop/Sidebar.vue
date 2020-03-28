@@ -1,7 +1,9 @@
 <template>
-  <b-row>
-    <b-col class='sidebar' md='12'>
-        <Menu/>
+  <b-row >
+    <b-col class="sidebar img_body_menu" md="12">
+      <div class="shadow" >
+        <Menu />
+      </div>
     </b-col>
   </b-row>
 </template>
@@ -16,10 +18,24 @@ export default {
 };
 </script>
 <style lang='scss'>
+.shadow {
+  background-color: rgba(51, 94, 87, 0.5);
+  width:100%;
+  position:absolute;
+  left:0;
+  height:100%;
+}
+.img_body_menu {
+  height: 1000px;
+  opacity: 1;
+  background: url("~@/assets/img_background_menu.png") no-repeat;
+  background-size: 100% 100%;
+}
 .sidebar {
-  background-color: rgba(57, 108, 103, 1);
+  background-color: rgb(7, 10, 10);
   min-height: 1000px;
   position: fixed;
-  border-right:solid 12px rgba(51,94,87,1);
+  border-right: solid 12px rgba(51, 94, 87, 1);
+  width: 100%;
 }
 </style>
