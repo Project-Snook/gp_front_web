@@ -37,5 +37,6 @@ export default {
   position: fixed;
   border-right: solid 12px rgba(51, 94, 87, 1);
   width: 100%;
+  box-shadow: 10px 0px 10px #0c2320;
 }
 </style>
