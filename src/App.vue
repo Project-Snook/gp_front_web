@@ -1,9 +1,9 @@
 <template>
-  <TemplateDesktop>
     <div id='app'>
+  <TemplateDesktop>
       <router-view />
-    </div>
   </TemplateDesktop>
+    </div>
 </template>
 <script>
 import TemplateDesktop from './template/desktop/Index.vue';
@@ -22,7 +22,8 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
+::-webkit-scrollbar              { background-color:#214b47; width:25px; }
+::-webkit-scrollbar-thumb        { background-color:#132c29 }
 
 #nav {
   padding: 30px;

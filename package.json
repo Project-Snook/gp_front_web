@@ -74,5 +74,9 @@
   ],
   "jest": {
     "preset": "@vue/cli-plugin-unit-jest/presets/typescript-and-babel"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/Project-Snook/gp_front_web.git",
+  "author": "hugoferreirag <hugo.fersoft@gmail.com>",
+  "license": "MIT"
 }

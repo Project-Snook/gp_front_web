@@ -39,7 +39,7 @@
   background-color: #2b5651;
   border-bottom: 1px solid #0c2320;
   border-top: 1px solid #3b7a72;
-  box-shadow: 0px 5px 10px #939b9a;
+  box-shadow: 0px 5px 10px #0c2320;
   height: 40px;
 }
 .title {
