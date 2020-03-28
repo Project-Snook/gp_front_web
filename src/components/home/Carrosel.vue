@@ -1,5 +1,5 @@
 <template>
-  <div style="width:90%; margin:03% 0% 0% 06%; height:200px; background-color: #c2c2c2c;">
+  <div class="carousel-div">
     <b-carousel
       v-model="slide"
       id="carousel-no-animation"
@@ -39,9 +39,11 @@ export default {
   },
   computed: {},
   methods: {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     onSlideStart(slide) {
       this.sliding = true;
     },
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     onSlideEnd(slide) {
       this.sliding = false;
     },
@@ -49,13 +51,19 @@ export default {
 };
 </script>
 <style lang="scss">
+.carousel-div {
+  width: 90%;
+  margin: 03% 0% 0% 06%;
+  height: 200px;
+}
 .img-carousel {
+  width: 100%;
   height: 370px;
 }
 .carousel-indicators .active {
   background-color: #15ff00;
 }
 .carousel-indicators li {
-  background-color: #16ff0170;
+  background-color: #061b0470;
 }
 </style>
