@@ -100,8 +100,8 @@
   color:white
 }
 .icon-btn {
-  margin-top: 5px;
-  margin-left: 20px;
+  margin-top: 0.8%;
+  margin-left: 5%;
 }
 .icon-nav-login {
   width: 20px;
