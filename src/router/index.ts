@@ -4,18 +4,13 @@ import Home from '../views/home/Index.vue';
 
 Vue.use(VueRouter);
 
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home,
-
-  },
-];
-
-const router = new VueRouter({
+export default new VueRouter({
   mode: 'history',
-  routes,
+  routes: [
+    {
+      path: '/',
+      name: 'Home',
+      component: Home,
+    },
+  ],
 });
-
-export default router;

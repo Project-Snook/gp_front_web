@@ -1,10 +1,10 @@
 <template>
   <b-row >
-    <b-col class="sidebar img_body_menu" md="12">
+    <div class="sidebar img_body_menu">
       <div class="shadow" >
         <Menu />
       </div>
-    </b-col>
+    </div>
   </b-row>
 </template>
 
@@ -36,6 +36,6 @@ export default {
   min-height: 1000px;
   position: fixed;
   border-right: solid 12px rgba(51, 94, 87, 1);
-  width: 100%;
+  width: 16.68%;
 }
 </style>
