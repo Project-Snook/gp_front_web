@@ -2,7 +2,20 @@
   <b-row >
     <div class="sidebar img_body_menu">
       <div class="shadow" >
-        <Menu />
+        <ul>
+          <span :style="linksStyle">
+          <li :style="textLinks">INICIO</li>
+          <li :style="textLinks" :class="coachLink"
+          @mouseover="showSubMenuBoost" @mouseleave="hideSubMenuBoost" >
+            BOOST/COACH
+          </li>
+          <ul :style="showMenu"  :class="subBoost">
+              <li :style="textLinks">AULAS</li>
+              <li :style="textLinks">BOOST</li>
+              <li :style="textLinks">RANQUED BOOST</li>
+          </ul>
+          </span>
+        </ul>
       </div>
     </div>
   </b-row>
