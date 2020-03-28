@@ -12,7 +12,7 @@
         caption="First slide"
         >
         <template v-slot:img>
-            <img src="@/assets/bg_carrousel_01.png" height="370"  alt="">
+            <img src="@/assets/p.png" height="370"  alt="">
         </template>
         </b-carousel-slide>
         <b-carousel-slide

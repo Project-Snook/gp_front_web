@@ -36,7 +36,7 @@
 </template>
 <style lang="scss">
 .toolbar {
-  background-color: #2b5651;
+  background-color: #214a47;
   border-bottom: 1px solid #0c2320;
   border-top: 1px solid #3b7a72;
   box-shadow: 0px 5px 10px #0c2320;
@@ -46,8 +46,8 @@
   font-size: 33px;
   font-weight: bold;
   color: aliceblue;
-  margin-left: 15px;
-  margin-top: -8px;
+  margin-left: 1%;
+  margin-top: -0.5%;
 }
 .sub-title {
   font-size: 25px;
@@ -78,25 +78,26 @@
 }
 .btn-nav {
   background-color: #1c3f3b;
-  height: 40px;
+  height: 38px;
   width: 80px;
-  margin-top: -2px;
+  margin-top: 0px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-left: 2px solid #0c2320;
-  border-bottom: 2px solid #0c2320;
-  border-top: 2px solid #3b7a72;
-  border-right: 2px solid #3b7a72;
+  border-left: 0.5px solid #0c2320;
+  border-top: 1px solid #3b7a72;
+  border-right: 0.5px solid #3b7a72;
   color: #c1c1c1;
   font-size: 15px;
   padding-top: 6px;
+  cursor: url('http://cur.cursors-4u.net/games/gam-4/gam372.cur'), auto !important;
 }
 .btn-nav:hover {
   border-left: 1px solid #3b7a72;
   border-bottom: 1px solid #3b7a72;
   border-top: 1px solid #0c2320;
   border-right: 1px solid #0c2320;
+  color:white
 }
 .icon-btn {
   margin-top: 5px;
