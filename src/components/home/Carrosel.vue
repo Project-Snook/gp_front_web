@@ -3,28 +3,30 @@
     <b-carousel
       v-model="slide"
       id="carousel-no-animation"
-      style="text-shadow: 0px 0px 2px #000"
       no-animation
       indicators
       controls
-      background="#ababab"
-      img-width="800"
-      img-height="400"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
-      <b-carousel-slide caption="First slide">
+      <b-carousel-slide>
         <template v-slot:img>
+          <div class="border-top"></div>
+          <div class="border-bottom"></div>
           <img src="@/assets/p.png" class="img-carousel" />
         </template>
       </b-carousel-slide>
-      <b-carousel-slide caption="Second Slide">
+      <b-carousel-slide>
         <template v-slot:img>
+          <div class="border-top"></div>
+          <div class="border-bottom"></div>
           <img src="@/assets/bg_carrousel_02.png" class="img-carousel" />
         </template>
       </b-carousel-slide>
-      <b-carousel-slide caption="Third Slide">
+      <b-carousel-slide>
         <template v-slot:img>
+          <div class="border-top"></div>
+          <div class="border-bottom"></div>
           <img src="@/assets/bg_carrousel_03.png" class="img-carousel" />
         </template>
       </b-carousel-slide>
@@ -54,16 +56,35 @@ export default {
 .carousel-div {
   width: 90%;
   margin: 03% 0% 0% 06%;
-  height: 200px;
+  height: 370px;
+  background: none;
 }
 .img-carousel {
+  box-shadow: 0px 5px 35px 5px #151c12;
   width: 100%;
   height: 370px;
 }
+.border-top {
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    background-color: #10140d;
+    opacity: 0.8;
+}
+.border-bottom {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  background-color: #10140d;
+  opacity: 0.8;
+  margin-top: 330px;
+}
 .carousel-indicators .active {
   background-color: #15ff00;
+  margin-bottom: -7px;
 }
 .carousel-indicators li {
   background-color: #061b0470;
+  margin-bottom: -7px;
 }
 </style>
