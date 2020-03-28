@@ -4,12 +4,14 @@
       <b-row>
         <b-col cols="9">
           <b-row>
-            <div class="light-on"></div>
-            <div class="title">SNOOK</div>
-            <div class="sub-title">Dota 2 COACH</div>
-            <div class="bio">BIO</div>
-            <div class="menu-btn">DEPOIMENTOS</div>
-            <div class="menu-btn">ULTIMOS ARTIGOS</div>
+            <b-col md="1" ><div class="light-on"></div></b-col>
+            <b-col md="1" class="title">SNOOK</b-col>
+            <b-col md="3" class="sub-title">Dota 2 COACH</b-col>
+            <b-row class="primaryLinks">
+              <b-col md="2" class="bio">BIO</b-col>
+              <b-col md="4" class="menu-btn">DEPOIMENTOS</b-col>
+              <b-col md="6" class="menu-btn">ULTIMOS ARTIGOS</b-col>
+            </b-row>
           </b-row>
         </b-col>
         <b-col cols="3">
@@ -35,6 +37,18 @@
   </b-row>
 </template>
 <style lang="scss">
+@font-face {
+  font-family: "FONT_EMUSE";
+  src: url("~@/assets/fonts/E-Muse-Bold.otf");
+}
+@font-face {
+  font-family: "FONT_REGULAR";
+  src: url("~@/assets/fonts/JosefinSans-Regular.ttf");
+}
+@font-face {
+  font-family: "FONT_THIN";
+  src: url("~@/assets/fonts/JosefinSans-Thin.ttf");
+}
 .toolbar {
   background-color: #214a47;
   border-bottom: 1px solid #0c2320;
@@ -46,14 +60,16 @@
   font-size: 33px;
   font-weight: bold;
   color: aliceblue;
-  margin-left: 1%;
+  margin-left: -3.5%;
   margin-top: -0.5%;
+  font-family: 'FONT_EMUSE';
 }
 .sub-title {
   font-size: 25px;
   color: aliceblue;
-  margin-left: 13px;
-  margin-top: -2px;
+  margin-left: 1%;
+  margin-top: 0.3%;
+  font-family: 'FONT_REGULAR';
 }
 .light-on {
   width: 6px;
@@ -66,15 +82,18 @@
 }
 .bio {
   font-size: 25px;
-  margin-top: -2px;
-  margin-left: 20px;
   color: #c1c1c1;
+  font-family: 'FONT_THIN';
+}
+.primaryLinks {
+    cursor: url('http://cur.cursors-4u.net/games/gam-4/gam372.cur'), auto !important;
+    margin-top:0.4%
 }
 .menu-btn {
   font-size: 15px;
-  margin-top: 7px;
-  margin-left: 20px;
+  margin-top:2%;
   color: #c2c2c2;
+  font-family: 'FONT_THIN';
 }
 .btn-nav {
   background-color: #1c3f3b;
