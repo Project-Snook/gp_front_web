@@ -6,7 +6,7 @@
             <Sidebar/>
         </b-col>
         <b-col md="10">
-            <slot />
+            <Body />
         </b-col>
     </b-row>
   </b-container>
@@ -14,11 +14,13 @@
 <script>
 import Sidebar from './Sidebar.vue';
 import Toolbar from './Toolbar.vue';
+import Body from './Body.vue';
 
 export default {
   components: {
     Toolbar,
     Sidebar,
+    Body,
   },
 };
 </script>

@@ -37,6 +37,7 @@ export default {
         display: 'none',
         fontSize: '16px',
         color: 'rgba(198,217,215,1)',
+        backgroundColor: '#c2c2c2',
         paddingLeft: '6%',
         cursor: 'pointer',
       },
