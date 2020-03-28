@@ -67,7 +67,7 @@
 .sub-title {
   font-size: 25px;
   color: aliceblue;
-  margin-left: 1%;
+  margin-left: 5%;
   margin-top: 0.3%;
   font-family: 'FONT_REGULAR';
 }
