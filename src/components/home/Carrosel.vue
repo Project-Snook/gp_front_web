@@ -11,22 +11,16 @@
     >
       <b-carousel-slide>
         <template v-slot:img>
-          <div class="border-top"></div>
-          <div class="border-bottom"></div>
           <img src="@/assets/p.png" class="img-carousel" />
         </template>
       </b-carousel-slide>
       <b-carousel-slide>
         <template v-slot:img>
-          <div class="border-top"></div>
-          <div class="border-bottom"></div>
           <img src="@/assets/bg_carrousel_02.png" class="img-carousel" />
         </template>
       </b-carousel-slide>
       <b-carousel-slide>
         <template v-slot:img>
-          <div class="border-top"></div>
-          <div class="border-bottom"></div>
           <img src="@/assets/bg_carrousel_03.png" class="img-carousel" />
         </template>
       </b-carousel-slide>
@@ -64,27 +58,12 @@ export default {
   width: 100%;
   height: 370px;
 }
-.border-top {
-    height: 10px;
-    width: 100%;
-    position: absolute;
-    background-color: #10140d;
-    opacity: 0.8;
-}
-.border-bottom {
-  height: 40px;
-  width: 100%;
-  position: absolute;
-  background-color: #10140d;
-  opacity: 0.8;
-  margin-top: 330px;
-}
 .carousel-indicators .active {
-  background-color: #15ff00;
+  background-color: #5AFF01;
   margin-bottom: -7px;
 }
-.carousel-indicators li {
-  background-color: #061b0470;
+.carousel-indicators li{
+  background-image: #163e00;
   margin-bottom: -7px;
 }
 </style>

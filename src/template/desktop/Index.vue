@@ -12,7 +12,7 @@
       <b-col md="12">a</b-col>
       <b-col md="2"></b-col>
         <b-col class="routerview"   md="10">
-          <div class="shadow" >
+          <div >
             <slot/>
           </div>
         </b-col>
