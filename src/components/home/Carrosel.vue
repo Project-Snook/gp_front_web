@@ -63,6 +63,7 @@ export default {
   margin-bottom: -7px;
 }
 .carousel-indicators li{
+  background-image: #163e00;
   margin-bottom: -7px;
 }
 </style>
