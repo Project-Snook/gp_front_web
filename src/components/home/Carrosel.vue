@@ -54,7 +54,7 @@ export default {
   background: none;
 }
 .img-carousel {
-  box-shadow: 0px 5px 35px 5px #151c12;
+  box-shadow: 0px 5px 35px #151c12;
   width: 100%;
   height: 370px;
 }

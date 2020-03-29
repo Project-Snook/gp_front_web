@@ -13,6 +13,8 @@
               <li class="linksCoach">BOOST</li>
               <li class="linksCoach">RANQUED BOOST</li>
           </ul>
+          </span>
+          <span class="pointer">
           <li class="linksMenu">ASSINANTES</li>
           <li class="linksMenu">HERÓIS</li>
           <li class="linksMenu">GRATUITO</li>
@@ -110,6 +112,9 @@ export default {
  top:2%;
  cursor: url('http://cur.cursors-4u.net/games/gam-4/gam372.cur') 0 0, auto !important;
 
+ }
+ .pointer {
+ cursor: url('http://cur.cursors-4u.net/games/gam-4/gam372.cur') 0 0, auto !important;
  }
  .menuCoach {
   list-style-type: none;
