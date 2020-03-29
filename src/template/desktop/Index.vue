@@ -12,7 +12,7 @@
       <b-col md="12">a</b-col>
       <b-col md="2"></b-col>
         <b-col class="routerview"   md="10">
-          <div >
+          <div class="shadow" >
             <slot/>
           </div>
         </b-col>
@@ -42,7 +42,7 @@ export default {
 <style lang='scss'>
 .shadow {
   background-image:
-  linear-gradient(to right, rgba(60,110,105,0.2),rgba(60,110,105,0.4), rgba(60,110,105,1));
+  linear-gradient(to bottom, rgba(60,110,105,0.1), rgba(19, 51, 48, 0.4));
 }
 .contentFooter {
   position:fixed !important;
