@@ -108,6 +108,8 @@ export default {
  left:-17%;
  text-align:left;
  top:2%;
+ cursor: url('http://cur.cursors-4u.net/games/gam-4/gam372.cur') 0 0, auto !important;
+
  }
  .menuCoach {
   list-style-type: none;
