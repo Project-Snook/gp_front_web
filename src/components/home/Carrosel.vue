@@ -59,11 +59,10 @@ export default {
   height: 370px;
 }
 .carousel-indicators .active {
-  background-color: #15ff00;
+  background-color: #5AFF01;
   margin-bottom: -7px;
 }
-.carousel-indicators li {
-  background-color: #163e00;
+.carousel-indicators li{
   margin-bottom: -7px;
 }
 </style>
