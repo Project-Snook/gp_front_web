@@ -86,7 +86,7 @@
   font-family: 'FONT_THIN';
 }
 .primaryLinks {
-    cursor: url('http://cur.cursors-4u.net/games/gam-4/gam372.cur'), auto !important;
+    cursor: url('http://cur.cursors-4u.net/games/gam-4/gam372.cur') 0 0, auto !important;
     margin-top:0.4%
 }
 .menu-btn {

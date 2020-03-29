@@ -2,18 +2,21 @@
   <b-row >
     <div class="sidebar img_body_menu">
       <div class="shadow" >
-        <ul>
-          <span :style="linksStyle">
-          <li :style="textLinks">INICIO</li>
-          <li :style="textLinks" :class="coachLink"
-          @mouseover="showSubMenuBoost" @mouseleave="hideSubMenuBoost" >
-            BOOST/COACH
+        <ul class="menu">
+          <span @mouseover="showMenuCoach" @mouseleave="hideMenuCoach">
+          <li class="linksMenu">INICIO</li>
+          <li :class="`linksMenu ${linkCoach}`" >
+            COACH/BOOST
           </li>
-          <ul :style="showMenu"  :class="subBoost">
-              <li :style="textLinks">AULAS</li>
-              <li :style="textLinks">BOOST</li>
-              <li :style="textLinks">RANQUED BOOST</li>
+          <ul  :class="`menuCoach  ${coachLink}`">
+              <li class="linksCoach">AULAS</li>
+              <li class="linksCoach">BOOST</li>
+              <li class="linksCoach">RANQUED BOOST</li>
           </ul>
+          <li class="linksMenu">ASSINANTES</li>
+          <li class="linksMenu">HERÓIS</li>
+          <li class="linksMenu">GRATUITO</li>
+          <li class="linksMenu">SOBRE</li>
           </span>
         </ul>
       </div>
@@ -22,15 +25,41 @@
 </template>
 
 <script>
-import Menu from './menu/Index.vue';
 
 export default {
   components: {
-    Menu,
+  },
+  data() {
+    return {
+      coachLink: 'hideMenuCoach',
+      linkCoach: '',
+    };
+  },
+  methods: {
+    showMenuCoach() {
+      this.coachLink = 'showMenuCoach';
+      this.linkCoach = 'linkCoach';
+    },
+    hideMenuCoach() {
+      this.coachLink = 'hideMenuCoach';
+      this.linkCoach = '';
+    },
   },
 };
 </script>
 <style lang='scss'>
+@font-face {
+  font-family: "FONT_EMUSE";
+  src: url("~@/assets/fonts/E-Muse-Bold.otf");
+}
+@font-face {
+  font-family: "FONT_REGULAR";
+  src: url("~@/assets/fonts/JosefinSans-Regular.ttf");
+}
+@font-face {
+  font-family: "FONT_THIN";
+  src: url("~@/assets/fonts/JosefinSans-Thin.ttf");
+}
 .shadow {
   background-color: rgba(51, 94, 87, 0.5);
   width:100%;
@@ -52,4 +81,46 @@ export default {
   width: 16.68%;
   box-shadow: 10px 0px 10px #0c2320;
 }
+.linksMenu {
+  color: #e7e7e7;
+  text-align:left;
+  padding-bottom:5%;
+  font-family: 'FONT_REGULAR';
+  padding-left:50px;
+}
+.linksCoach {
+  list-style: none;
+  text-align:left;
+  padding-left:15%;
+  color: #e7e7e7;
+  font-family: 'FONT_REGULAR';
+}
+.linkCoach {
+  padding-top:3%;
+  background-color:#274a46;
+  width:100%;
+  border-bottom:#132422 2px solid;
+}
+.menu {
+ list-style-type: none;
+ position:absolute;
+ width:280px;
+ left:-17%;
+ text-align:left;
+ top:2%;
+ }
+ .menuCoach {
+  list-style-type: none;
+  background-color:#1d3633;
+  width:100%;
+  padding: 2px 0px 5px 15%;
+ }
+ .showMenuCoach {
+   display:block;
+ }
+ .hideMenuCoach {
+   display:none;
+ }
+
+
 </style>
