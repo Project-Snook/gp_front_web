@@ -9,7 +9,7 @@
       </b-col>
       <b-col md="9">
         <b-row>
-          <b-col md="12">
+          <b-col md="8">
             <img class="img_col_discord" src="~@/assets/discord_icon.png" />
             <img class="img_col_1" src="~@/assets/whatsapp_group_icon.png" />
             <img class="img_col_1" src="~@/assets/face_group_icon.png" />
@@ -17,6 +17,10 @@
             <img class="img_col_1" src="~@/assets/instagram_icon.png" />
             <img class="img_col_1" src="~@/assets/twitter_icon.png" />
             <img class="img_col_1" src="~@/assets/youtube_icon.png" />
+          </b-col>
+          <b-col md="4" class="row">
+            <b-input class="input" type="email" placeholder="Cadastre-se para novidades"/>
+            <div class="btn"><p>Cadastrar</p></div>
           </b-col>
         </b-row>
         <b-row>
@@ -78,6 +82,25 @@ export default {};
   margin-top: 35px;
   float: left;
   margin-left: 10px;
+}
+.input {
+  width: 200px;
+  height: 25px;
+  font-size: 12px;
+  margin-left: -150px;
+  margin-top: 8px;
+}
+.btn {
+  background-color: #464646;
+  height: 25px;
+  width: 80px;
+  margin-top: 8px;
+  color: #e2dddd;
+  font-size: 13px;
+}
+.btn p{
+  margin-top: -4px;
+  margin-left: -2px;
 }
 .contact {
   float: left;
