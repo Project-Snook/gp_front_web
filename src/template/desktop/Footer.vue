@@ -36,6 +36,7 @@
             </p>
           </b-col>
           <b-col md="2">
+            <img class="img_col_logo" src="~@/assets/copyRights_icon.png" />
           </b-col>
         </b-row>
       </b-col>
@@ -94,6 +95,12 @@ export default {};
   margin-left: 5px;
   color: rgb(182, 184, 187);
   text-align: start;
+}
+.img_col_logo {
+  width: 100px;
+  float: left;
+  margin-left: -30px;
+  margin-top: 30px;
 }
 .footer {
   height: 200px !important;
