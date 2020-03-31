@@ -46,7 +46,7 @@ export default {
 }
 .contentFooter {
   position:fixed !important;
-  height:100px;
+  height:130px;
   z-index:99;
   bottom:0;
   width:106%
@@ -64,7 +64,7 @@ export default {
     opacity: 0.5;
 }
 .slotFooter {
-  background-color:#101213;
+  background-color:#0d0e0f;
   border-top:solid 15px rgba(40,40,40,1)
 }
 </style>
