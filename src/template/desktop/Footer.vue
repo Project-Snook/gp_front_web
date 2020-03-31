@@ -20,7 +20,8 @@
           </b-col>
           <b-col md="4" class="row">
             <b-input class="input" type="email" placeholder="Cadastre-se para novidades"/>
-            <div class="btn"><p>Cadastrar</p></div>
+            <div class="btn"><p>CADASTRAR</p></div>
+            <p class="email">E-mail</p>
           </b-col>
         </b-row>
         <b-row>
@@ -96,11 +97,19 @@ export default {};
   width: 80px;
   margin-top: 8px;
   color: #e2dddd;
-  font-size: 13px;
+  font-size: 10px;
 }
 .btn p{
-  margin-top: -4px;
-  margin-left: -2px;
+  margin-top: -2px;
+  margin-left: -4px;
+}
+.email {
+  font-size: 12px;
+  color: hsl(0, 1%, 57%);
+  float: left;
+  margin-left: -60px;
+  margin-top: 33px;
+  position: absolute;
 }
 .contact {
   float: left;
